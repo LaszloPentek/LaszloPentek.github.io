@@ -1,0 +1,32 @@
+*{
+    padding: 5px;
+}
+main{
+    display: grid;
+    grid-template-columns: 30% 70%
+}
+img{
+    width: 100%;
+}
+.profil{
+    background-color: black;
+    color: #eee
+}
+.content{
+    background-color: #eee;
+}
+.logo{
+    width: 150px;
+}
+.icon{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+}
+.portfolio div{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+.middleText{
+    
+}
