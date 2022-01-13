@@ -1,24 +1,33 @@
 *{
     padding: 5px;
 }
+body{
+    background: #EDEDED;
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
 h1,h2{
     display: flex;
     justify-content: center;
 }
 main{
     display: grid;
-    grid-template-columns: 30% 70%
+    grid-template-columns: 35% 65%
 }
 img{
     width: 100%;
 }
 .profil{
-    background-color: black;
     color: #eee;
     height: auto;
 }
+.profil div{
+    background-color: black;
+}
 .content{
-    background-color: #eee;
+    background-color: white;
 }
 .logo{
     width: 150px;
@@ -32,11 +41,7 @@ img{
     display: grid;
     grid-template-columns: auto auto auto;
 }
-/*
-.middleText{
 
-}
-*/
 
 
 
