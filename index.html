@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hu">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,72 +9,113 @@
     <title>Document</title>
 </head>
 <body>
+  <nav>
+    <ul>
+      <li><a href="#">Föoldal</a></li>
+      <li><a href="#">Portfolió</a></li>
+      <li><a href="#">Rólam</a></li>
+      <li><a href="#">Kapcsolat</a></li>
+    </ul>
+  </nav>
     <header>
+      <section class="profil">
+        <img src="./img/profil.JPG" alt="">
+        <div>
+          <h1>Szia, Péntek László vagyok</h1>
+          <h2>Front-end webfejlesztő</h2>
+          <section class="icons">
+            <ul class="profil-li">
+              <li><a href="https://github.com/LaszloPentek"><img src="img/github.svg" alt="github-link"></a></li>
+              <li><a href="https://www.linkedin.com/in/lászló-péntek-12818922b/"><img src="img/linkedin.svg" alt="linkedin-link"></a></li>
+            </ul>
+          </section>
+        </div>
 
+
+      </section>
     </header>
     <main>
-        <div class="profil">
-            <img src="./img/profil.JPG" alt="">
-            <div>
-              <h2>Front-end webfejlesztő</h2>
-              <ul>
-                  <li>Péntek László Benjámin</li>
-                  <li>Esztergom</li>
-                  <li>1994.04.09</li>
-                  <li>pentek.laszlo1994@gmail.com</li>
-                  <li>https://github.com/LaszloPentek</li>
-              </ul>
-            </div>
+        
 
-
-        </div>
-        <div class="content">
+        <div class="portfolio">
             <h1> HTML & CSS Developer</h1>
 
-
-            <h2>Ismereteim</h2>
-            <div class="icon">
-                <div class="logo">
-                    <img src="./img/html5-svgrepo-com.svg" alt="">
-                    <h3>HTML5</h3>
-                </div>
-                <div class="logo">
-                    <img src="./img/css3-svgrepo-com.svg" alt="">
-                    <h3>CSS3</h3>
-                </div>
-                <div class="logo">
-                    <img src="./img/bootstrap-svgrepo-com.svg" alt="">
-                    <h3>Bootstrap</h3>
-                </div>
-            </div>
-            <div class="portfolio">
-              <h2>Portfolio</h2>
-              <div>
-                <div class="project">
-                  <img src="./img/placeholder.png" alt="">
-                </div>
-                <div class="project">
-                  <img src="./img/placeholder.png" alt="">
-                </div>
-                <div class="project">
-                  <img src="./img/placeholder.png" alt="">
-                </div>
-                <div class="project">
-                  <img src="./img/placeholder.png" alt="">
-                </div>
-                <div class="project">
-                  <img src="./img/placeholder.png" alt="">
-                </div>
-                <div class="project">
-                  <img src="./img/placeholder.png" alt="">
-                </div>
+            <section class="portfolio">
+              <div class="cards">
+                  <div>
+                    <img src="./img/lotusz.png" alt="">
+                  </div>
+                  <div>
+                    <h2>Lotusz jóga</h2>
+                    <p>Ez a projekt <a href="https://programozas-karrier.teachable.com">Programozás Karrier</a> weboldalépítő modul-jában lévő <strong>Példa projekt: jóga oldal</strong> alapján készült.</p>
+                    <div>
+                        <button type="button" class="btn btn-primary">HTML</button>
+                        <button type="button" class="btn btn-primary">CSS</button>
+                    </div>
+                  </div>
+                 
               </div>
+              <div class="cards">
+                <div>
+                  <img src="./img/beershop.png" alt="">
+                </div>
+                <div>
+                  <h2>BeerShop</h2>
+                  <p>Ez a projekt <a href="https://programozas-karrier.teachable.com">Programozás Karrier</a> weboldalépítő modul-jában lévő <strong><a href="https://www.youtube.com/watch?v=_bpznOcy4G4">youtube-on elérhető </a>képzeletbeli kézmüves söröket forgalmazo </strong> oldal alapján készült.</p>
+                  <div>
+                      <button type="button" class="btn btn-primary">HTML</button>
+                      <button type="button" class="btn btn-primary">CSS</button>
+                  </div>
+                </div>    
             </div>
+              <div class="cards">
+                <div>
+                  <a href="https://laszlopentek.github.io/szemelyi_edzo/">
+                    <img src="./img/szemelyiedzo.png" alt="">
+                  </a>
+                  
+                </div>
+                <div>
+                  <h2>Személyi edző képzés oldal</h2>
+                  <p>Ez a projekt <a href="https://programozas-karrier.teachable.com">Programozás Karrier</a> weboldalépítő modul-jában lévő <strong><a href="https://www.youtube.com/watch?v=_bpznOcy4G4">youtube-on elérhető </a>képzeletbeli kézmüves söröket forgalmazo </strong> oldal alapján készült.</p>
+                  <div>
+                      <button type="button" class="btn btn-primary">HTML</button>
+                      <button type="button" class="btn btn-primary">CSS</button>
+                  </div>
+                </div>    
+            </div>
+          </section>
+
+            
+        
         </div>
+        <section id="rolam">
+            <p>Szia! Engedje meg, hogy bemutatkozzak. Az informatika mindig is érdekelt, és mindig kíváncsi voltam arra, hogyan épül fel egy teljes alkalmazás, valamint arra, hogy mi van mögötte. Azonban igazán 2021 tavaszán kezdtem el mélyebben elmélyedni az HTML és CSS kapcsolatában.</p>
+            <p>Az oldalomon bemutatom az eddigi munkáimat és projekteket, amelyeken dolgoztam. Nagyon fontos számomra, hogy az oldal tiszta és átlátható legyen, így a felhasználók könnyen megtalálhatják az információkat, amelyekre kíváncsiak. Az oldalamon találhatók linkek az online jelenlétemhez, például a GitHub és a LinkedIn profiljaimhoz.</p>
+            <p>Célom az, hogy tovább fejlesszem a programozási készségeimet és tapasztalataimat. Szeretnék részt venni izgalmas projektekben és lehetőségekben, amelyek segítségével még többet tanulhatok és hozzájárulhatok az informatikai terület fejlődéséhez.</p>
+            <p>Ha bármilyen kérdése vagy észrevétele van, ne habozzon kapcsolatba lépni velem. Köszönöm, hogy meglátogatta az oldalam.</p>
+            <button class="btn btn-primary">Download CV</button>
+        </section>
     </main>
     <footer>
-
-    </footer>
+      <ul>
+          <li>LinkedIn</li>
+          <li>Github</li>
+          <li>E-mail</li>
+      </ul>
+      <form action=".">
+          <label>
+              Név:
+              <input type="text">
+          </label>
+          <label>
+              E-mail:
+              <input type="email">
+          </label>
+          <textarea name="" id="" ></textarea>
+          <input type="button" class="form-btn" value="küldés">
+      </form>
+  </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
