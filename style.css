@@ -1,9 +1,9 @@
-*{
+ *{
     padding: 0;
     margin: 0;
     color: var(--text-color);
-    background-color: var(--primary-color);
-    font-size: 10px;
+    /* background-color: var(--primary-color); */
+    font-size: 20px;
 }
 :root{
     --primary-color: #55E3EB;
@@ -13,15 +13,24 @@
     --text-color: #051F23;
     --hoverkover: #005D66;
 }
-h1,h2{
-    display: flex;
-    justify-content: center;
+h1{
+    font-size: 2.4rem;
+} 
+h2{
+    font-size: 1.8rem;
 }
+
 /*  Nav  */
-nav ul  {
+nav{
+    background-color: var(--primary-color);
+    position: fixed;
+}
+
+ nav ul  {
     display: flex; 
     flex-direction: end;
     padding: 10px;
+
 
 }
 nav ul li {
@@ -31,20 +40,21 @@ nav ul li {
 }
 nav ul li a{
     text-decoration: none;
-    color: var(--text-color);
     font-size: 2rem;
     font-weight: 500;
 }
 nav ul li a:hover{
     color: var(--blabla3);
-}
+} 
 /*  Header  */
+
 .profil{
     display: flex;
+    justify-content: center;
+    padding: 100px 0 30px;
+    background-color: #005D66;
 }
-.profil div{
-    /* background-color: black; */
-}
+
 .profil-li{
     display: flex;
     list-style: none;
@@ -53,42 +63,108 @@ nav ul li a:hover{
 
 
 /*main*/
-main{
-    /* max-width: 940px; */
+
+
+ main{
     margin-left: auto;
     margin-right: auto;
     
+} 
+/*rolam*/
+#rolam{
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #00ABB3;
+    
+}
+#rolam p{
+    font-size: 1.5rem;
+}
+/*Portfolio*/
+#portfolio{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+ .portfolio-card{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: auto;
+    border: 2px solid black;
+    padding: 0 0 20px 0;
+    margin: 25px ;
+}
+.portfolio-card h3{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+.portfolio-card p{
+    margin: 0 10px 25px;
+}
+.portfolio-card a{
+    border: 1px solid;
+    padding: 5px 20px;
+    margin: 10px;
+    background-color: yellowgreen;
 }
 
-
-/* img{
-    width: 100%;
-} */
-
-.portfolio{
-
-}
-.logo{
-    width: 150px;
-}
-.icon{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content: space-around;
-}
-.portfolio div{
-    display: grid;
-    grid-template-columns: auto auto auto;
+.cards-img{
+    width: 500px;
 }
 
+/* kapcsolat*/
 
+#contact {
+    width: 1000px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid black;
+    /* background-color: #003E48; */
 
+}
+#contact form{
+    display: flex;
+    flex-direction: column;
 
+}
+#contact label{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    width: 400px;
 
+}
+textarea{
+    width: 500px;
+    height: 200px;
+    padding: 10px;
+    margin: 20px;
+}
+#contact input[type="button"]{
+    width: 100px;
+    margin: 20px;
+}
 
-/* @media screen and (max-width:  576px) {
-    main{
-        display: grid;
-        grid-template-columns: auto;
-    }
-} */
+/*footer*/
+footer{
+    background-color: var(--primary-color);
+
+}
+footer ul{
+    display: flex;
+    padding: 10px;
+}
+footer ul li{
+    list-style: none;
+    padding: 10px;
+}
+footer ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 500;
+}
