@@ -14,8 +14,8 @@
     --hoverkover: #005D66;
 }
 button{
-    background-color: #4CAF50; /* Green */
-    border: none;
+    background-color: rgba(0, 0, 0, 0); /* Green */
+    border: 1px solid black;
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -27,12 +27,13 @@ h1{
     font-size: 5.4rem;
 } 
 h2{
-    font-size: 4.8rem;
+    font-size: 4.3rem;
 }
 
 /*  Nav  */
+/* https://www.youtube.com/watch?v=6HFpw5fcaD8 */
 nav{
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
     position: fixed;
     width: 100%;
 }
@@ -67,6 +68,12 @@ nav ul li a:hover{
     background-color: #005D66;
     min-height: 100vh;
 }
+.profil div button a{
+    margin: 10px;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0);
+    text-decoration: none;
+}
 
 .profil-li{
     display: flex;
@@ -85,13 +92,18 @@ nav ul li a:hover{
 } 
 /*rolam*/
 #rolam{
+    display: flex;
+    justify-content: space-around;
     background-color: #00ABB3;   
 }
 #rolam p{
     font-size: 1.5rem;
-    width: 900px;
+    /* width: 900px; */
     margin-left: auto;
     margin-right: auto;
+}
+#rolam section{
+    width: 50%;
 }
 /*Portfolio*/
 #portfolio{
@@ -130,13 +142,13 @@ nav ul li a:hover{
 /* kapcsolat*/
 
 #contact {
-    width: 1000px;
-    height: 500px;
+
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     border: 1px solid black;
     /* background-color: #003E48; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 
 }
 #contact form{
