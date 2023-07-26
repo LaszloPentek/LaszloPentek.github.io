@@ -142,14 +142,14 @@ nav ul li a:hover{
 /* kapcsolat*/
 
 #contact {
-
+    background-color: #00ABB3;
+    color: white;
     display: flex;
     border: 1px solid black;
     /* background-color: #003E48; */
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
-
 }
 #contact form{
     display: flex;
@@ -157,11 +157,12 @@ nav ul li a:hover{
 
 }
 #contact label{
+    font-size: 2rem;
     display: flex;
     flex-direction: column;
     margin: 10px;
     padding: 10px;
-    width: 400px;
+    width: 500px;
 
 }
 textarea{
@@ -171,8 +172,12 @@ textarea{
     margin: 20px;
 }
 #contact input[type="button"]{
-    width: 100px;
+    width: auto;
     margin: 20px;
+    padding: 10px 100px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid black;
+    text-align: center;
 }
 
 /*footer*/
