@@ -1,96 +1,138 @@
 <!DOCTYPE html>
 <html lang="hu">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
-</head>
-<body>
-  <nav>
-    <ul>
-      <li><a href="#">Föoldal</a></li>
-      <li><a href="#portfolio">Portfolió</a></li>
-      <li><a href="#rolam">Rólam</a></li>
-      <li><a href="#contact">Kapcsolat</a></li>
-    </ul>
-  </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,300;1,900&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <title>Péntek László | Föoldal</title>
+  </head>
+
+  <body>
     <header>
+      <nav class="menu">
+        <input type="checkbox" name="hamburger" id="menu__toggle" />
+        <label for="menu__toggle" class="hamburger-button">
+          <span class="hamburger-lines"></span>
+        </label>
+        <ul class="menu__box">
+          <li class="menu__item"><a href="#">Föoldal</a></li>
+          <li class="menu__item"><a href="#portfolio">Portfolió</a></li>
+          <li class="menu__item"><a href="#rolam">Rólam</a></li>
+          <li class="menu__item"><a href="#contact">Kapcsolat</a></li>
+        </ul>
+      </nav>
       <section class="profil">
         <div>
           <h1>Péntek László</h1>
           <h2>Frontend Fejlesztő</h2>
           <section class="icons">
-            <button><a href="#contact">kapcsolat</a></button>
+            <a href="#contact" class="profil_btn">kapcsolat</a>
             <ul class="profil-li">
-              <li><a href="https://github.com/LaszloPentek"><img src="img/github.svg" alt="github-link"></a></li>
-              <li><a href="https://www.linkedin.com/in/lászló-péntek-12818922b/"><img src="img/linkedin.svg" alt="linkedin-link"></a></li>
+              <li>
+                <a href="https://github.com/LaszloPentek"
+                  ><img src="img/github.svg" alt="github-link"
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/lászló-péntek-12818922b/">
+                  <img src="img/linkedin.svg" alt="linkedin-link" />
+                </a>
+              </li>
             </ul>
           </section>
         </div>
       </section>
     </header>
     <main>
-      
       <section id="rolam">
-        <section>
-          <img src="./img/profil.JPG" alt="">
-          <button class="btn btn-primary">Download CV</button>
+        <section class="profil-section">
+          <section>
+            <img src="./img/profil.JPG" alt="" />
+          </section>
+          <section>
+            <p>
+              Péntek László vagyok, 2021-be kezdtem el komolyabban foglalkozni a
+              webfejlesztés iránt. De maga az IT mindig is érdekelt, mindig is
+              szerettem volna tudni hogy egy adott alkalmazás hogyan is épül fel
+              és milyen folyamatokon megy végbe mire a felhasználóhoz kerül az
+              adott alkalmazás. Szeretném a tudásomat tovább fejleszteni egy cég
+              mellet.
+            </p>
+          </section>
         </section>
-        <section>
-          <p>Péntek László vagyok, 2021-be kezdtem el komolyabban foglalkozni a webfejlesztés iránt. De maga az IT mindig is érdekelt, mindig is szerettem volna tudni hogy egy adott alkalmazás hogyan is épül fel és milyen folyamatokon megy végbe mire a felhasználóhoz kerül az adott alkalmazás. Szeretném a tudásomat tovább fejleszteni egy cég mellet. És igyekszem majd a lehető legjobban helytálni.</p>
+        <section class="btn-container">
+          <button class="btn btn-primary">
+            <a href="" download>Download CV</a>
+          </button>
         </section>
       </section>
       <!-- <h2> Portfolió</h2> -->
       <section id="portfolio">
         <section class="portfolio-card">
-          <img src="./img/coming-soon.jpg" alt="" class="cards-img">
+          <img src="./img/coming-soon.jpg" alt="" class="cards-img" />
           <h3>coming soon</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, magnam?</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
+            magnam?
+          </p>
           <div>
             <a href="#">Projekt</a>
             <a href="#"><i class="fa-brands fa-github"></i> Repo</a>
           </div>
-        </section> 
+        </section>
         <section class="portfolio-card">
-          <img src="./img/coming-soon.jpg" alt="" class="cards-img">
+          <img src="./img/coming-soon.jpg" alt="" class="cards-img" />
           <h3>coming soon</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, magnam?</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
+            magnam?
+          </p>
           <div>
             <a href="#">Projekt</a>
             <a href="#"><i class="fa-brands fa-github"></i> Repo</a>
           </div>
-        </section> 
+        </section>
         <section class="portfolio-card">
-          <img src="./img/coming-soon.jpg" alt="" class="cards-img">
+          <img src="./img/coming-soon.jpg" alt="" class="cards-img" />
           <h3>coming soon</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, magnam?</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique,
+            magnam?
+          </p>
           <div>
             <a href="#">Projekt</a>
             <a href="#"><i class="fa-brands fa-github"></i> Repo</a>
           </div>
-        </section> 
+        </section>
       </section>
       <!-- <h2>Kapcsolat</h2> -->
       <section id="contact">
-        <form action=".">
+        <form action="#">
           <label>
             Név:
-            <input type="text">
+            <input type="text" />
           </label>
           <label>
             E-mail:
-            <input type="email">
+            <input type="email" />
           </label>
-            <textarea ></textarea>
-            <input type="button" class="form-btn" value="küldés">
+          <textarea></textarea>
+          <input type="button" class="form-btn" value="küldés" />
         </form>
       </section>
     </main>
-
-</body>
+    <footer></footer>
+  </body>
 </html>
