@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,900;1,300;1,900&display=swap"
       rel="stylesheet" />
     <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/form.css" />
     <title>Péntek László | Föoldal</title>
   </head>
 
@@ -38,7 +39,7 @@
           <h1>Péntek László</h1>
           <h2>Frontend Fejlesztő</h2>
           <section class="icons">
-            <a href="#contact" class="profil_btn">kapcsolat</a>
+            <a href="#contact" class="profil_btn btn">kapcsolat</a>
             <ul class="profil-li">
               <li>
                 <a href="https://github.com/LaszloPentek"
@@ -73,8 +74,8 @@
           </section>
         </section>
         <section class="btn-container">
-          <button class="btn btn-primary">
-            <a href="" download>Download CV</a>
+          <button class="btn btn-primary button-27">
+            <a href="" download >Download CV</a>
           </button>
         </section>
       </section>
@@ -119,18 +120,25 @@
       </section>
       <!-- <h2>Kapcsolat</h2> -->
       <section id="contact">
-        <form action="#">
-          <label>
-            Név:
-            <input type="text" />
-          </label>
-          <label>
-            E-mail:
-            <input type="email" />
-          </label>
-          <textarea></textarea>
-          <input type="button" class="form-btn" value="küldés" />
-        </form>
+        <section id="contact">
+          <form action="#">
+            <div class="wrapper">
+              <div class="input-data">
+                <input type="text" required />
+                <div class="underline"></div>
+                <label>Name</label>
+              </div>
+            </div>
+            <div class="wrapper">
+              <div class="input-data">
+                <input type="text" required />
+                <div class="underline"></div>
+                <label>E-mail</label>
+              </div>
+            </div>
+            <textarea></textarea>
+            <input type="button" class="form-btn btn button-27" value="küldés" />
+          </form>
       </section>
     </main>
     <footer></footer>

@@ -1,0 +1,406 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-size: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+:root {
+  --primary-color: #55e3eb;
+  --secondary-background-color: #00abb3;
+  --hover-color: #befcff;
+  --text-color: #051f23;
+  --main-background-color: #005d66;
+  --blabla4: #003e48;
+}
+
+.btn {
+  border: 1px solid black;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 5.4rem;
+}
+
+h2 {
+  font-size: 4.3rem;
+}
+
+/****  Nav  ****/
+#menu__toggle {
+  visibility: hidden;
+}
+
+.hamburger-button {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hamburger-lines,
+.hamburger-lines::before,
+.hamburger-lines::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: black;
+  transition-duration: 0.2s;
+}
+
+.hamburger-lines::before {
+  content: "";
+  top: -10px;
+}
+
+.hamburger-lines::after {
+  content: "";
+  top: 10px;
+}
+.menu__box {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 30px;
+  padding: 75px 0;
+  margin: 0;
+  visibility: hidden;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  top: 0;
+  transition-duration: 0.5s;
+}
+
+.menu__item {
+  padding: 20px 30px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  left: 0;
+}
+
+#menu__toggle:checked ~ .hamburger-button .hamburger-lines {
+  transform: rotate(45deg);
+}
+
+#menu__toggle:checked ~ .hamburger-button .hamburger-lines::before {
+  display: none;
+}
+
+#menu__toggle:checked ~ .hamburger-button .hamburger-lines::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+
+nav,
+nav ul {
+  background-color: var(--primary-color);
+  position: fixed;
+  width: 100%;
+  height: auto;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: end;
+  padding: 10px;
+}
+nav ul li {
+  list-style: none;
+  padding: 10px;
+}
+nav ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+}
+nav ul li a:hover {
+  color: var(--hover-color);
+  
+}
+/****  Header  ****/
+
+.profil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 100px 0 30px; */
+  background-color: var(--main-background-color);
+  min-height: 100vh;
+}
+.profil_btn {
+  margin: 10px;
+  font-size: 2rem;
+  border: 1px solid;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0);
+  text-decoration: none;
+}
+
+.profil-li {
+  display: flex;
+  list-style: none;
+  margin: 20px 0;
+}
+
+.profil-li li{
+  margin-right: 20px;
+}
+/**** main ****/
+
+main {
+  margin-left: auto;
+  margin-right: auto;
+}
+/**** rolam ****/
+#rolam {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--secondary-background-color);
+}
+.profil-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#rolam p {
+  font-size: 2rem;
+  margin: 0 30px;
+  /* width: 900px; */
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+/**** Portfolio ****/
+#portfolio {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: var(--main-background-color);
+}
+.portfolio-card {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: auto;
+  border: 2px solid black;
+  padding: 0 0 20px 0;
+  margin: 25px;
+}
+.portfolio-card h3 {
+  font-size: 1.5rem;
+  margin: 10px;
+}
+.portfolio-card p {
+  margin: 0 10px 25px;
+}
+.portfolio-card a {
+  border: 1px solid;
+  padding: 5px 20px;
+  margin: 10px;
+  background-color: yellowgreen;
+  
+}
+
+.cards-img {
+  width: 500px;
+}
+
+/**** kapcsolat ****/
+
+/* #contact {
+  background-color: var(--secondary-background-color);
+  color: white;
+  display: flex;
+  border: 1px solid black;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 2000px;
+}
+#contact form {
+  display: flex;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+#contact label {
+  font-size: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  width: 500px;
+}
+
+
+
+textarea {
+  width: 500px;
+  height: 200px;
+  padding: 10px;
+  margin: 20px;
+}
+#contact input[type="button"] {
+  width: auto;
+  margin: 20px;
+  padding: 10px 100px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid black;
+  text-align: center;
+} */
+
+/**** footer ****/
+footer {
+  background-color: var(--primary-color);
+}
+footer ul {
+  display: flex;
+  padding: 10px;
+}
+footer ul li {
+  list-style: none;
+  padding: 10px;
+}
+footer ul li a {
+  text-decoration: none;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+@media (max-width: 992px) {
+  * {
+    color: yellow;
+  }
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .hamburger-button {
+    visibility: hidden;
+  }
+
+  .menu__box {
+    visibility: visible;
+    left: 0;
+    transition-property: none;
+  }
+
+  .hamburger-lines,
+  .hamburger-lines::before,
+  .hamburger-lines::after {
+    transition-property: none;
+  }
+}
+
+@media (max-width: 750px) {
+  .menu__box {
+    flex-direction: column;
+  }
+
+  .menu__box li {
+    background-color: black;
+    width: 50%;
+    height: 100vb;
+    border-bottom: 1px solid white;
+  }
+
+  * {
+    color: blueviolet;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 576px) {
+  * {
+    color: pink;
+  }
+  h1 {
+    font-size: 2.6rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* CSS */
+.button-27 {
+  appearance: none;
+  background-color: var(--blabla4);
+  border: 2px solid #1a1a1a;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(0.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  /* width: 100%; */
+  will-change: transform;
+}
+
+.button-27:disabled {
+  pointer-events: none;
+}
+
+.button-27:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
+.button-27:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
