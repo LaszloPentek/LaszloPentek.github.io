@@ -335,6 +335,7 @@ footer ul li a {
     /* color: brown; */
     font-size: 16px;
   }
+  
 
   .hamburger-button {
     visibility: hidden;
@@ -351,17 +352,20 @@ footer ul li a {
   .hamburger-lines::after {
     transition-property: none;
   }
+
+  
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .menu__box {
     flex-direction: column;
   }
 
   .menu__box {
-    background-color: pink;
+    background-color: rgba(0, 0, 0, 0);
     width: 100%;
-    height: 30px;
+    height: 20px;
+    padding-top: 140px;
   }
 
   .menu__box li {
