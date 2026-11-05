@@ -207,7 +207,7 @@ Tartalmazza:
 - Kapcsolatfelvételi lehetőség
 - LinkedIn-profil
 - GitHub-profil
-- Később megadandó e-mail-cím
+- E-mail: pentek.laszlo1994@gmail.com (megerősítve: 2026-11-05)
 
 Amíg nincs működő űrlapfeldolgozás, ne jelenjen meg működőnek látszó, de használhatatlan kapcsolatfelvételi űrlap.
 
