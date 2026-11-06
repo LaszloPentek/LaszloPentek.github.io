@@ -1,6 +1,6 @@
 # Három kezdőoldal-koncepció terve
 
-Állapot: jóváhagyásra előkészített terv, 2026-11-05. A felhasználó három koncepciót kért; az alábbi konkrét irányok még nem kerültek jóváhagyásra.
+Állapot: a felhasználó 2026-11-05-én jóváhagyta mindhárom konkrét irányt és a megvalósítást.
 
 ## Közös alap
 Péntek László személyes webdesigner-márkája magyar kisvállalkozóknak. Magyar, tegeződő szövegek; saját PL-monogram és eredeti portrék. Elsődleges CTA: Munkáim megtekintése; másodlagos: Beszéljünk a projektedről. Kapcsolat: pentek.laszlo1994@gmail.com, a briefben megerősített LinkedIn-cím és GitHub-profil.

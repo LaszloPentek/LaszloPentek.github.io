@@ -1,0 +1,110 @@
+{
+  "directions": [
+    {
+      "id": 1,
+      "slug": "karakteres-kezjegy",
+      "name": "Karakteres kézjegy",
+      "description": "Grafit, lime és határozott tipográfia. Tágas felületek, nagy munkabemutatók.",
+      "rationale": "A digitális tervezői karaktert helyezi előtérbe.",
+      "palette": {
+        "primary": "#C8FF5F",
+        "secondary": "#242931",
+        "accent": "#C8FF5F",
+        "bg": "#111318",
+        "surface": "#242931",
+        "text": "#F5F3EE",
+        "muted": "#A7ABB4"
+      },
+      "fonts": {
+        "heading": {
+          "family": "Space Grotesk",
+          "fallback": "sans-serif"
+        },
+        "body": {
+          "family": "Inter",
+          "fallback": "sans-serif"
+        },
+        "google_fonts_url": "https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap"
+      },
+      "contrast_axes": {
+        "density": "spacious",
+        "typography": "large geometric sans",
+        "hero": "typographic",
+        "visual_metaphor": "signature",
+        "rhythm": "wide alternating projects",
+        "shape": "square"
+      }
+    },
+    {
+      "id": 2,
+      "slug": "szemelyesen-laszloval",
+      "name": "Személyesen Lászlóval",
+      "description": "Világos felületek, mélyzöld részletek és személyes portré. Nyugodt, közvetlen hangulat.",
+      "rationale": "Az együttműködés személyességét és a bizalmat hangsúlyozza.",
+      "palette": {
+        "primary": "#244B40",
+        "secondary": "#DCE7DF",
+        "accent": "#C8FF5F",
+        "bg": "#F5F3EE",
+        "surface": "#FFFFFF",
+        "text": "#111318",
+        "muted": "#59635E"
+      },
+      "fonts": {
+        "heading": {
+          "family": "Source Serif 4",
+          "fallback": "Georgia, serif"
+        },
+        "body": {
+          "family": "Manrope",
+          "fallback": "sans-serif"
+        },
+        "google_fonts_url": "https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap"
+      },
+      "contrast_axes": {
+        "density": "balanced",
+        "typography": "serif and humanist sans",
+        "hero": "split portrait",
+        "visual_metaphor": "personal meeting",
+        "rhythm": "two-column work and service rows",
+        "shape": "soft corners"
+      }
+    },
+    {
+      "id": 3,
+      "slug": "nyitott-muhely",
+      "name": "Nyitott műhely",
+      "description": "Kobaltkék hangsúlyok, aszimmetrikus kompozíciók. A munkák és a tervezés folyamata kerülnek előtérbe.",
+      "rationale": "Összeköti a frontend szemléletet a vizuális tervezéssel.",
+      "palette": {
+        "primary": "#294BCC",
+        "secondary": "#DCE4F5",
+        "accent": "#C8FF5F",
+        "bg": "#F1F3F7",
+        "surface": "#FFFFFF",
+        "text": "#111318",
+        "muted": "#596273"
+      },
+      "fonts": {
+        "heading": {
+          "family": "Sora",
+          "fallback": "sans-serif"
+        },
+        "body": {
+          "family": "Source Sans 3",
+          "fallback": "sans-serif"
+        },
+        "google_fonts_url": "https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600&display=swap"
+      },
+      "contrast_axes": {
+        "density": "medium",
+        "typography": "balanced geometric",
+        "hero": "project composition",
+        "visual_metaphor": "open studio",
+        "rhythm": "offset asymmetry",
+        "shape": "mixed"
+      }
+    }
+  ],
+  "total": 3
+}
