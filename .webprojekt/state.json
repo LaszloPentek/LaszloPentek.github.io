@@ -1,8 +1,11 @@
 {
-  "phase": "prototypes_complete",
+  "phase": "direction_selected",
   "direction_count": 3,
   "is_redesign": true,
   "source_url": "https://laszlopentek.github.io/",
   "approved": true,
-  "approved_date": "2026-11-05"
+  "approved_date": "2026-11-05",
+  "selected_direction": 1,
+  "selection_date": "2026-11-06",
+  "portfolio_visible": false
 }

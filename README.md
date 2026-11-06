@@ -1,3 +1,7 @@
+# Aktuális állapot: kiválasztott 1. koncepció
+
+Az index.html már a kiválasztott, módosított főoldal. A portfóliómunkák egyelőre nem jelennek meg. A korábbi választó a koncepciok.html munkaanyagban található. Részletes döntések: .webprojekt/kivalasztott-design.md.
+
 # Péntek László – három portfóliókoncepció
 
 ## Megnyitás
